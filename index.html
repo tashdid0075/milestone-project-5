@@ -12,7 +12,7 @@
 <body>
 
 
-    <header>
+    <header class="sticky z-50 top-0 space-y-4">
         <nav>
             <div class="navbar bg-amber-50 p-3 lg:p-6">
                 <div class="navbar-start">
@@ -38,16 +38,18 @@
             </div>
         </nav>
 
+
+        <div class="flex justify-center space-x-5">
+            <button id="show-donation-btn"
+                class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Donation</button>
+            <button id="show-history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+        </div>
+
     </header>
 
 
 
     <main class="max-w-screen-xl mx-auto space-y-4 mt-5 lg:mt-10">
-
-        <div class="flex justify-center space-x-5">
-            <button id="show-donation-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Donation</button>
-            <button id="show-history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
-        </div>
 
         <!-- Donation Section -->
 
@@ -85,7 +87,11 @@
                         <div>BDT</div>
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
-                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                    <p> The recent floods in Feni have devastated local communities, leading to severe disruption and
+                        loss. Your generous donation will help provide immediate aid, including food, clean water, and
+                        medical supplies, to those affected by this calamity. Together, we can offer crucial support and
+                        help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
+                        real difference. Please consider donating today to assist those in urgent need.</p>
                     <input id="feni-donation-amount" type="text" placeholder="Amount">
                     <button id="feni-donation-btn" class="btn btn-block bg-lime-400">Donate Now</button>
                 </div>
@@ -103,7 +109,12 @@
                         <div>BDT</div>
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movementh</h2>
-                    <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need..</p>
+                    <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                        individuals. Your support is crucial in providing medical assistance, rehabilitation, and
+                        necessary supplies to those affected. By contributing, you help ensure that injured individuals
+                        receive the care and support they need during this challenging time. Every donation plays a
+                        vital role in alleviating their suffering and aiding in their recovery. Please consider making a
+                        donation to support these brave individuals in their time of need..</p>
                     <input id="protest-donation-amount" type="text" placeholder="Amount">
                     <button id="protest-donation-btn" class="btn btn-block bg-lime-400">Donate Now</button>
                 </div>
@@ -113,10 +124,25 @@
         <!-- History Section -->
 
         <section id="history-section" class="space-y-4">
-            
-            
+
+
 
         </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+        
+        <dialog id="modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex flex-col items-center justify-center">
+                <img src="assets/coin.png" alt="">
+                <h3 class="text-lg font-bold">Congratulations!</h3>
+                <p class="py-4">Your Donation Was Successful!</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
 
 

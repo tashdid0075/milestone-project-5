@@ -7,21 +7,28 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="">
 
 
-    <header class="sticky z-50 top-0 space-y-4">
-        <nav>
+    <header class="sticky z-50 top-0">
+        <nav class="overflow-hidden">
             <div class="navbar bg-amber-50 p-3 lg:p-6">
                 <div class="navbar-start">
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Blog</button>
+                    <a href="blog.html"><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Blog</button></a>
                 </div>
                 <div class="navbar-center">
                     <div class="flex items-center gap-3 ">
-                        <img src="assets/logo.png" alt="">
-                        <h1 class="text-sm lg:text-xl font-bold">Donate Bangladesh</h1>
+                        <img class="w-9" src="assets/logo.png" alt="">
+                        <h1 class="text-sm lg:text-xl font-bold">Donate</h1>
                     </div>
                 </div>
                 <div class="navbar-end">
@@ -29,7 +36,7 @@
                     <div class="flex items-center gap-2">
                         <img src="assets/coin.png" alt="">
                         <div id="current-balance">5000</div>
-                        <div>BDT</div>
+                        <div class="hidden md:block">BDT</div>
                     </div>
 
 
@@ -39,7 +46,7 @@
         </nav>
 
 
-        <div class="flex justify-center space-x-5">
+        <div class="flex justify-center space-x-5 bg-white bg-opacity-50 p-5">
             <button id="show-donation-btn"
                 class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Donation</button>
             <button id="show-history-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
@@ -53,7 +60,7 @@
 
         <!-- Donation Section -->
 
-        <section id="donation-section" class="space-y-5">
+        <section id="donation-section" class="space-y-5 mb-0">
             <!-- Card 1 -->
             <div class="card lg:card-side bg-base-100 shadow-xl grid md:grid-cols-2 p-4 md:p-6">
                 <figure>
@@ -119,6 +126,7 @@
                     <button id="protest-donation-btn" class="btn btn-block bg-lime-400">Donate Now</button>
                 </div>
             </div>
+    
         </section>
 
         <!-- History Section -->
@@ -149,6 +157,9 @@
 
 
     </main>
+    <footer id="footer" class="bg-amber-50 w-full h-20 lg:h-40 mt-10"></footer>
+
+    
 
 
     <script src="js/layout.js"></script>

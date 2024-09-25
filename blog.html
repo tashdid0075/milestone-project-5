@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky z-50 top-0">
+        <nav class="overflow-hidden">
+            <div class="navbar bg-amber-50 p-3 lg:p-6">
+                <div class="navbar-start">
+                    <a href="index.html"><button id="home-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-lime-400">Home</button></a>
+                </div>
+                <div class="navbar-center">
+                    <div class="flex items-center gap-3 ">
+                        <img class="w-9" src="assets/logo.png" alt="">
+                        <h1 class="text-sm lg:text-xl font-bold">Donate</h1>
+                    </div>
+                </div>
+                <div class="navbar-end">
+
+                    <div class="flex items-center gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <div id="current-balance">5000</div>
+                        <div class="hidden md:block">BDT</div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="mt-6 px-4">
+        
+        <section class="max-w-6xl mx-auto space-y-7">
+            <h1 class="font-bold text-2xl">Important FAQ</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is DOM?</div>
+                <div class="collapse-content">
+                  <p>Data representation of the objects that comprise the structure and content of a document on the web.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                <div class="collapse-content">
+                  <p>getElementById, getElementsByClassName, getElementsByTagName, querySelector, etc.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in context of DOM and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>A technique where a single event listener is attached to a parent element, rather than multiple listeners being attached to individual child elements.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using DOM?</div>
+                <div class="collapse-content">
+                  <p>By accessing and modifying properties of the element.</p>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <footer class="bg-amber-50 w-full h-20 lg:h-40 mt-10"></footer>
+    
+    <script src="js/layout.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/transaction.js"></script>
+</body>
+</html>
